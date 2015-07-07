@@ -2,50 +2,48 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Teste Center</title>
-	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript">
-		function center() {
-			var w=$(window).height();
-			var b=$(".box-center").height();
-			if (b < w) {
-				$(".box-center").css({
-					"margin-top": (w / 2) - (b / 2)
-				});
-			}else{
-				$(".box-center").css({
-					"margin-top": 0
-				});
-			}
-		}
-		window.onresize = center;
-	</script>
-
-	<style>
-		.box-center {
-			width: 400px;
-			height: 400px;
-			margin: 0 auto;
-			padding: 10px;
-			background-color: #f2f2f2;
-			border: 1px solid #666666;
-		}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Teste Center</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        function center() {
+            var w = $(window).height();
+            var b = $(".box-center").height();
+            if (b < w) {
+                $(".box-center").css({
+                    "margin-top": (w / 2) - (b / 2)
+                });
+            } else {
+                $(".box-center").css({
+                    "margin-top": 0
+                });
+            }
+        }
+        window.onresize = center;
+    </script>
+    <style>
+        .box-center {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #666666;
+        }
+    </style>
 </head>
 
 <body>
-	<div class="box-center">
-		<h1>Lorem ipsum</h1>
-		<p>
-			Dolor sit amet, consectetur adipiscing elit. Etiam finibus bibendum metus vitae dignissim. Nam pretium, orci in accumsan bibendum, metus odio luctus ipsum, et pulvinar massa tortor id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ex neque, tempus efficitur mollis at, mattis a augue. Suspendisse ultricies pretium laoreet. Nulla et condimentum massa, at egestas est. Nullam aliquet ex non ipsum condimentum, eget semper felis aliquam. Morbi sed pulvinar felis. Maecenas accumsan tellus vitae varius imperdiet. Integer mollis tincidunt scelerisque. Cras suscipit orci lacinia, sollicitudin lorem ut, rhoncus urna. Mauris gravida quam at felis hendrerit blandit. Mauris dignissim leo ut arcu pretium semper. Phasellus faucibus, felis eget tincidunt ullamcorper, purus mauris mattis est, vitae vulputate est nunc id ex.
-		</p>
-	</div>
-	<script>
-		window.onload = center;
-	</script>
-
+    <div class="box-center">
+        <h1>Lorem ipsum</h1>
+        <p>
+            Dolor sit amet, consectetur adipiscing elit. Etiam finibus bibendum metus vitae dignissim. Nam pretium, orci in accumsan bibendum, metus odio luctus ipsum, et pulvinar massa tortor id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ex neque, tempus efficitur mollis at, mattis a augue. Suspendisse ultricies pretium laoreet. Nulla et condimentum massa, at egestas est. Nullam aliquet ex non ipsum condimentum, eget semper felis aliquam. Morbi sed pulvinar felis. Maecenas accumsan tellus vitae varius imperdiet. Integer mollis tincidunt scelerisque. Cras suscipit orci lacinia, sollicitudin lorem ut, rhoncus urna. Mauris gravida quam at felis hendrerit blandit. Mauris dignissim leo ut arcu pretium semper. Phasellus faucibus, felis eget tincidunt ullamcorper, purus mauris mattis est, vitae vulputate est nunc id ex.
+        </p>
+    </div>
+    <script>
+        window.onload = center;
+    </script>
 </body>
 
 </html>
